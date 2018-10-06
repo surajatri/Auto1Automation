@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11639" started-at="2018-10-06T17:52:27Z" finished-at="2018-10-06T17:52:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11639" started-at="2018-10-06T17:52:27Z" finished-at="2018-10-06T17:52:39Z">
+      <class name="automation.autohero.testcases.AutoHeroTestCases">
+        <test-method status="PASS" signature="mainSetup()[pri:0, instance:automation.autohero.testcases.AutoHeroTestCases@1593948d]" name="mainSetup" is-config="true" duration-ms="160" started-at="2018-10-06T18:52:27Z" finished-at="2018-10-06T18:52:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainSetup -->
+        <test-method status="PASS" signature="instantiaze(org.testng.ITestContext)[pri:0, instance:automation.autohero.testcases.AutoHeroTestCases@1593948d]" name="instantiaze" is-config="true" duration-ms="0" started-at="2018-10-06T18:52:27Z" finished-at="2018-10-06T18:52:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13d9b21f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiaze -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:automation.autohero.testcases.AutoHeroTestCases@1593948d]" name="setup" is-config="true" duration-ms="3237" started-at="2018-10-06T18:52:27Z" finished-at="2018-10-06T18:52:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13d9b21f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void automation.autohero.testcases.AutoHeroTestCases.AutoHeroSearchScenario()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AutoHeroSearchScenario()[pri:0, instance:automation.autohero.testcases.AutoHeroTestCases@1593948d]" name="AutoHeroSearchScenario" duration-ms="8037" started-at="2018-10-06T18:52:30Z" finished-at="2018-10-06T18:52:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutoHeroSearchScenario -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:automation.autohero.testcases.AutoHeroTestCases@1593948d]" name="tearDown" is-config="true" duration-ms="356" started-at="2018-10-06T18:52:38Z" finished-at="2018-10-06T18:52:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13d9b21f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void automation.autohero.testcases.AutoHeroTestCases.AutoHeroSearchScenario()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.autohero.testcases.AutoHeroTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

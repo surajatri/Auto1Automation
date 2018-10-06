@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]">
+  <parameter name="browser" value="CHROME"/>
+  <listeners>
+    <listener class-name="automation.autohero.reporting.ReportingListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="CHROME"/>
+    <classes>
+      <class name="automation.autohero.testcases.AutoHeroTestCases">
+        <methods>
+          <include name="instantiaze"/>
+          <include name="verifyQAAssessmentFunctionality"/>
+          <include name="setup"/>
+          <include name="mainSetup"/>
+        </methods>
+      </class> <!-- automation.autohero.testcases.AutoHeroTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

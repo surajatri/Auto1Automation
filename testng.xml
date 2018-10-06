@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" thread-count="3">
+	<listeners>
+		<listener class-name="automation.autohero.reporting.ReportingListener"></listener>
+	</listeners>
+	<test name="Test">
+	    <parameter name="browser" value="CHROME"></parameter>
+	    <!--parameter name="browser" value="CHROME"></parameter  -->
+		<classes>
+			<class name="automation.autohero.testcases.AutoHeroTestCases"/>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
