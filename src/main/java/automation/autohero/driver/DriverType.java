@@ -17,7 +17,7 @@ public enum DriverType implements IDriverSetup {
 
 			// TODO Auto-generated method stub
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/Jars/geckodriver.exe");
-			return new FirefoxDriver(dc);
+			return new FirefoxDriver();
 
 		}
 
@@ -34,7 +34,7 @@ public enum DriverType implements IDriverSetup {
 		public WebDriver getDriverObject(DesiredCapabilities dc) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir")+"/Jars/chromedriver.exe");
-			return new ChromeDriver(dc);
+			return new ChromeDriver();
 
 		}
 
@@ -49,7 +49,7 @@ public enum DriverType implements IDriverSetup {
 		public WebDriver getDriverObject(DesiredCapabilities dc) {
 			// TODO Auto-generated method stub
 			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/Jars/IEDriverServer.exe");			
-			return new InternetExplorerDriver(dc);
+			return new InternetExplorerDriver();
 		}
 
 		public DesiredCapabilities getDesiredCapabilities(DriverConfig config) {

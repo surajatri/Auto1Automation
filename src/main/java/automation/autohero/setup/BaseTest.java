@@ -1,6 +1,5 @@
 package automation.autohero.setup;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Properties;

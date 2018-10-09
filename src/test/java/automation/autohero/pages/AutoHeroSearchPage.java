@@ -3,31 +3,18 @@ package automation.autohero.pages;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Properties;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-
-
-import automation.autohero.elements.Button;
 import automation.autohero.elements.DropDown;
 import automation.autohero.elements.Element;
-import automation.autohero.elements.Link;
-import automation.autohero.elements.TextField;
 import automation.autohero.elements.Element.LocatorType;
 import automation.autohero.reporting.ReportUtil;
-import automation.autohero.utils.LoadProperties;
 import automation.autohero.utils.VerifyFunctions;
-//import automation.autohero.utils.DateFunctions;
 
 public class AutoHeroSearchPage {
 
 	WebDriver driver;
-	private static Link lnkLogo = new Link("//*[@data-qa-selector='logo-link']", LocatorType.XPATH);	
-	private static Link lnkFilterYear = new Link("//*[@data-qa-selector='filter-year']//span", LocatorType.XPATH);
 	private static DropDown eleFirstRegistrationYear = new DropDown("//*[@data-qa-selector='filter-year']//select[@data-qa-selector='select']", LocatorType.XPATH);
 	private static DropDown eleSortBy = new DropDown("//div[@data-qa-selector='sort-select']//select", LocatorType.XPATH);
 	private static Element eleSortBylabel = new Element("//label[contains(text(),'Sortiert nach')]", LocatorType.XPATH);
@@ -47,7 +34,7 @@ public class AutoHeroSearchPage {
 	}
 
 	/**
-	 * Creating Constructor to Initilize driver for session
+	 * Creating Constructor to Initialize driver for session
 	 * 
 	 * @return null
 	 */
@@ -171,7 +158,7 @@ public class AutoHeroSearchPage {
 				carPrice = Integer.parseInt(arr[0].replace(".", ""));
 				priceList.add(carPrice);		
 			}
-			List sortedPriceList = new ArrayList(priceList);
+			List<Integer> sortedPriceList = new ArrayList<Integer>(priceList);
 			if(strSortingOrder.toLowerCase().equals("ascending")){
 				Collections.sort(sortedPriceList);
 			}else{

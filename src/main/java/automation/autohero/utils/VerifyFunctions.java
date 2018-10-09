@@ -1,7 +1,5 @@
 package automation.autohero.utils;
 
-import static org.testng.Assert.assertEquals;
-
 import automation.autohero.reporting.ReportUtil;
 
 public class VerifyFunctions {	

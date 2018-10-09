@@ -1,16 +1,6 @@
-
-
 package automation.autohero.driver;
 
-import java.net.URISyntaxException;
-
-import java.util.ArrayList;
-
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.Proxy;
-import org.openqa.selenium.Proxy.ProxyType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
 
 public class DriverConfig {
 
@@ -22,10 +12,6 @@ public class DriverConfig {
     public static final int DEFAULT_PAGE_LOAD_TIMEOUT = 90;
     private double implicitWaitTimeout = DEFAULT_IMPLICIT_WAIT_TIMEOUT;
     private int explicitWaitTimeout = DEFAULT_EXPLICIT_WAIT_TIME_OUT;
-    private int pageLoadTimeout = DEFAULT_PAGE_LOAD_TIMEOUT;
-     
-    
-
 
     /**
      * @return chromeBinPath

@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+
 
 import automation.autohero.driver.DriverFactory;
 import automation.autohero.reporting.ReportUtil;
@@ -29,8 +29,6 @@ public class Element {
 	 */
 	protected WebElement element = null;
 	
-	private List<WebElement> elements = null;
-
 	/**
 	 * The String locator
 	 */
@@ -125,7 +123,7 @@ public class Element {
 	}
 	
 	public  List<WebElement> getElements() {
-		return elements = (driver.findElements(by));
+		return (driver.findElements(by));
 	}
 
 	/**

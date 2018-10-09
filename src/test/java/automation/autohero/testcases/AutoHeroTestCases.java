@@ -1,12 +1,8 @@
 package automation.autohero.testcases;
 
-import java.util.Properties;
 import org.testng.annotations.Test;
-
 import automation.autohero.pages.AutoHeroSearchPage;
-import automation.autohero.reporting.ReportUtil;
 import automation.autohero.setup.BaseTest;
-import automation.autohero.utils.LoadProperties;
 
 
 public class AutoHeroTestCases extends BaseTest {
@@ -15,12 +11,12 @@ public class AutoHeroTestCases extends BaseTest {
 	public static AutoHeroSearchPage autoSearchPage;
 
 	/**
-	 * verify successfully login 
+	 * verify search functionality
 	 * 
 	 * @return null
 	 */
 	@Test(enabled=true)
-	public void AutoHeroSearchScenario()
+	public void testAutoHeroSearchScenario()
 	{			
 		autoSearchPage = new AutoHeroSearchPage(driver);
 
@@ -34,9 +30,7 @@ public class AutoHeroTestCases extends BaseTest {
 		autoSearchPage.verifyRegistrationYearFilterValues(propData.getProperty("registrationYear"));
 		
 		//Verify All cars are displayed in price descending order
-		autoSearchPage.verifyCarPriceSortedOrderBy("descending");
-		
-		
+		autoSearchPage.verifyCarPriceSortedOrderBy("descending");	
 		
 	}	
 	
